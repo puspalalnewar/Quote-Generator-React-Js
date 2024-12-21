@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import './QuoteGenerator.css'
 import { IoReload } from "react-icons/io5";
-import { RiTwitterXFill } from "react-icons/ri";
 
 const QuoteGenerator = () => {
 
@@ -12,7 +11,7 @@ const QuoteGenerator = () => {
     author: "Puspalal Newar"
   });
 
-  
+
 
   async function loadQuotes() {
     setLoading(true);
@@ -21,13 +20,6 @@ const QuoteGenerator = () => {
     setQuote(data.quotes[Math.floor(Math.random() * (data.quotes.length))]);
     setLoading(false);
   }
-
-  // console.log(allquotes[0].author);
-
-  // const random =()=>{
-  //   const select = allquotes[Math.floor(Math.random(allquotes.length))];
-  //   setQuote(select);
-  // }
 
   return (
     <div>
@@ -42,7 +34,6 @@ const QuoteGenerator = () => {
             </div>
             <div className="icons">
               <IoReload onClick={() => loadQuotes()} />
-              <RiTwitterXFill />
             </div>
           </div>
         </div>

@@ -30,8 +30,6 @@ header{
     justify-content: space-around;
 }
 .icons{
-    display: flex;
-    gap: 0.5rem;
     cursor: pointer;
 }
 .author{
